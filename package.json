@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-bindings",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltsupo/ts-node-bindings.git"
+  },
+  "author": "Valtteri Poutanen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltsupo/ts-node-bindings/issues"
+  },
+  "homepage": "https://github.com/waltsupo/ts-node-bindings#readme",
+  "dependencies": {
+    "node-addon-api": "^1.4.0",
+    "node-gyp": "^3.8.0"
+  }
+}
