@@ -1,3 +1,3 @@
-const tsnodebindings = require('./build/Release/tsnodebindings.node');
+const tsnodebindings = require('./build/Release/tsnodebindings');
 
 console.log(tsnodebindings);
