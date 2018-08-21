@@ -5,8 +5,7 @@
   "main": "main.js",
   "gypfile": true,
   "scripts": {
-    "build": "node-gyp build",
-    "rebuild": "node-gyp rebuild",
+    "build": "node-gyp rebuild",
     "test": "node test.js"
   },
   "repository": {
