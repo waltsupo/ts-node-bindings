@@ -1,9 +1,6 @@
-#define TSBINDINGS_VOICE
+#include <nan.h>
 
-#include <napi.h>
-
-namespace voice {
-  std::string sayhello();
-  Napi::String HelloWrapped(const Napi::CallbackInfo& info);
-  Napi::Object Init(Napi::Env env, Napi::Object exports);
-}
+class Voice : public Nan::ObjectWrap {
+  public:
+    static NAN_METHOD(SayHello);
+};

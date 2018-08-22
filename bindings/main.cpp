@@ -1,8 +1,9 @@
-#include <napi.h>
+#include <nan.h>
 #include "voice.h"
 
-Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
-  return voice::Init(env, exports);
+void InitAll(v8::Local<v8::Object> exports) {
+  Nan::SetMethod(exports, "sayHello", Voice::SayHello);
 }
 
-NODE_API_MODULE(NODE_GYP_MODULE_NAME, InitAll)
+
+NODE_MODULE(NODE_GYP_MODULE_NAME, InitAll);
