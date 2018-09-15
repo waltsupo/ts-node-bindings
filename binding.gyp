@@ -2,6 +2,7 @@
     "targets": [{
         "target_name": "tsnodebindings",
         "sources": [
+            "bindings/errors.cpp",
             "bindings/voice.cpp",
             "bindings/client.cpp",
             "bindings/main.cpp"
